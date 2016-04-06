@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>734</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_proof"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="actionClose"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuLemmas">
+    <property name="title">
+     <string>Lemmas</string>
+    </property>
+    <addaction name="actionImport"/>
+    <addaction name="actionDelete"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuLemmas"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="action_ElimAnd"/>
+   <addaction name="action_IntroAnd"/>
+   <addaction name="action_ElimOr"/>
+   <addaction name="action_IntroOr"/>
+   <addaction name="action_ElimArrow"/>
+   <addaction name="action_IntroArrow"/>
+   <addaction name="action_RAA"/>
+   <addaction name="action_ElimEquiv"/>
+   <addaction name="action_IntroEquiv"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="action_ElimAnd">
+   <property name="text">
+    <string>∧E</string>
+   </property>
+   <property name="toolTip">
+    <string>∧ Elimination</string>
+   </property>
+  </action>
+  <action name="action_IntroAnd">
+   <property name="text">
+    <string>∧I</string>
+   </property>
+   <property name="toolTip">
+    <string>∧ Introduction</string>
+   </property>
+  </action>
+  <action name="action_ElimOr">
+   <property name="text">
+    <string>∨E</string>
+   </property>
+   <property name="toolTip">
+    <string>∨ Elimination</string>
+   </property>
+  </action>
+  <action name="action_IntroOr">
+   <property name="text">
+    <string>∨I</string>
+   </property>
+   <property name="toolTip">
+    <string>∨ Introduction</string>
+   </property>
+  </action>
+  <action name="action_ElimArrow">
+   <property name="text">
+    <string>→E</string>
+   </property>
+   <property name="toolTip">
+    <string>→ Elimination</string>
+   </property>
+  </action>
+  <action name="action_IntroArrow">
+   <property name="text">
+    <string>→I</string>
+   </property>
+   <property name="toolTip">
+    <string>→ Introduction</string>
+   </property>
+  </action>
+  <action name="action_RAA">
+   <property name="text">
+    <string>RAA</string>
+   </property>
+   <property name="toolTip">
+    <string>Reductio Ad Absurdum</string>
+   </property>
+  </action>
+  <action name="action_ElimEquiv">
+   <property name="text">
+    <string>↔E</string>
+   </property>
+   <property name="toolTip">
+    <string>↔ Elimination</string>
+   </property>
+  </action>
+  <action name="action_IntroEquiv">
+   <property name="text">
+    <string>↔I</string>
+   </property>
+   <property name="toolTip">
+    <string>↔ Introduction</string>
+   </property>
+  </action>
+  <action name="actionNew_proof">
+   <property name="text">
+    <string>New proof</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save As...</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>Close</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import...</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete...</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

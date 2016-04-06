@@ -1,0 +1,5 @@
+# Qt builds
+build-*
+# Qt user file for the project
+*.pro.user
+
