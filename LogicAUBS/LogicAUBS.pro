@@ -8,13 +8,20 @@ QT       += core gui webkitwidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = LogicTL
+TARGET = LogicAUBS
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    proofwindow.cpp \
+    proof.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    proofwindow.h \
+    proof.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    res.qrc
